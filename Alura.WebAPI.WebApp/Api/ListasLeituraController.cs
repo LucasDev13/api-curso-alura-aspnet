@@ -23,11 +23,14 @@ namespace Alura.WebAPI.WebApp.Api
             return new Lista
             {
                 Tipo = tipo.ParaString(),
-                Livros = (IEnumerable<LivroApi>)_repo.All.Where(l => l.Lista == tipo).ToList()
+                Livros = _repo.All
+                        .Where(l => l.Lista == tipo)
+                        .Select(l => l.ToApi())
+                        .ToList()
             };
         }
 
-
+         
         [HttpGet]
         public IActionResult TodasListas()
         {
