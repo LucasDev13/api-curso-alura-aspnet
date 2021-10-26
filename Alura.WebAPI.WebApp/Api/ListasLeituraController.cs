@@ -18,12 +18,12 @@ namespace Alura.WebAPI.WebApp.Api
             _repo = repository;
         }
 
-        /**private Lista CriarLista(TipoListaLeitura tipo)
+        private Lista CriaLista(TipoListaLeitura tipo)
         {
             return new Lista
             {
                 Tipo = tipo.ParaString(),
-                Livros = _repo.All.Where(l => l.Lista == tipo).ToList()
+                Livros = (IEnumerable<LivroApi>)_repo.All.Where(l => l.Lista == tipo).ToList()
             };
         }
 
@@ -31,9 +31,9 @@ namespace Alura.WebAPI.WebApp.Api
         [HttpGet]
         public IActionResult TodasListas()
         {
-            Lista paraLer = CriarLista(TipoListaLeitura.ParaLer);
-            Lista lendo = CriarLista(TipoListaLeitura.Lendo);
-            Lista lidos = CriarLista(TipoListaLeitura.Lidos);
+            Lista paraLer = CriaLista(TipoListaLeitura.ParaLer);
+            Lista lendo = CriaLista(TipoListaLeitura.Lendo);
+            Lista lidos = CriaLista(TipoListaLeitura.Lidos);
             var colecao = new List<Lista> { paraLer, lendo, lidos };
             return Ok(colecao);
         }
@@ -42,8 +42,8 @@ namespace Alura.WebAPI.WebApp.Api
         [HttpGet("{tipo}")]
         public IActionResult Recuperar(TipoListaLeitura tipo)
         {
-            var lista = CriarLista(tipo);
+            var lista = CriaLista(tipo);
             return Ok(lista);
-        }*/
+        }
     }
 }
