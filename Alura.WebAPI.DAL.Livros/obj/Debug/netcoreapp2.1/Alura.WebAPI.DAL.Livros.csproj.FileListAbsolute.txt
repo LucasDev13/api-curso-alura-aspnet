@@ -10,3 +10,4 @@ C:\Users\Lucas - Developer C#\Documents\workerspace-dotnet\Alura.WebAPI\Alura.We
 C:\Users\Lucas - Developer C#\Documents\workerspace-dotnet\Alura.WebAPI\Alura.WebAPI.DAL.Livros\obj\Debug\netcoreapp2.1\Alura.WebAPI.DAL.Livros.csproj.CoreCompileInputs.cache
 C:\Users\Lucas - Developer C#\Documents\workerspace-dotnet\Alura.WebAPI\Alura.WebAPI.DAL.Livros\obj\Debug\netcoreapp2.1\Alura.WebAPI.DAL.Livros.dll
 C:\Users\Lucas - Developer C#\Documents\workerspace-dotnet\Alura.WebAPI\Alura.WebAPI.DAL.Livros\obj\Debug\netcoreapp2.1\Alura.WebAPI.DAL.Livros.pdb
+C:\Users\Lucas - Developer C#\Documents\workerspace-dotnet\Alura.WebAPI\Alura.WebAPI.DAL.Livros\obj\Debug\netcoreapp2.1\Alura.WebAPI.DAL.Livros.csproj.CopyComplete
